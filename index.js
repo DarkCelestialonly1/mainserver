@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.text());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var connection = mysql.createPool({ host: 'localhost', user: 'root', password: '', database: 'test' });
+var connection = mysql.createPool({ host: 'remotemysql.com', user: 'riOGgAjTbR', password: 'lJlitOk7tL', database: 'riOGgAjTbR' });
 
 
 app.post('/', upload.any(), (req, res) => {
